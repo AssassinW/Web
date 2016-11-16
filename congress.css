@@ -1,0 +1,138 @@
+body{
+  height:100%;
+}
+@font-face {
+  font-family:"Open Sans";
+  src: url('https://fonts.googleapis.com/css?family=Open+Sans');
+}
+@media (max-width: 480px){
+  .mobile_hide{
+    display: none;
+  }
+}
+#wrapper {
+    padding-left: 0;
+}
+#wrapper.toggled {
+    padding-left: 15%;
+}
+#sidebar {
+    position: absolute;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #3D3C3E;
+}
+#wrapper.toggled #sidebar {
+    width: 15%;
+}
+#mainPage {
+    height:auto;
+    width: 100%;
+    position: absolute;
+    padding: 5px;
+    background-color:#F5F4F5;
+}
+
+#wrapper.toggled #mainPage {
+    height:100%;
+    position: absolute;
+    width: 85%;
+    margin-right: 5px;
+}
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+.sidebar-nav {
+    height: 65px;
+    font-size: 14px;
+    line-height: 60px;
+}
+.sidebar-nav a {
+    color: #999999;
+}
+.sidebar-nav a:hover {
+    background: none;
+}
+#title{
+	font-size: 20px;
+}
+#logo{
+	height:20px;
+	width:64px;
+}
+#menu-toggle{
+	background-color: transparent;
+	border:1px solid transparent;
+}
+hr{
+  border-style: solid;
+}
+#outer-well{
+  margin-left: 1px;
+  margin-right: 1px;
+}
+.table-head{
+  background-color:#F5F4F5;
+  height:40px;
+  line-height: 40px;
+}
+.table-responsive{
+  border-radius: 3px;
+}
+input{
+  height: 30px;
+  border-radius: 1px;
+}
+#content-tab,#state,#senate,#house,#active,#new,#commhouse,#commsenate,#joint,#legis,#bill,#comm{
+  background: white;
+}
+.hidden{
+  display: none;
+}
+#selectbar{
+  text-align: right;
+  margin-right: 0;
+  margin-top: 5px;
+  height: 30px;
+  width:120px;
+}
+#detail1,#detail2,#detail3,#detail4{
+  border:solid 1px #F5F4F5;
+  border-radius: 1px;
+  background-color: white;
+}
+.thumbnail{
+  left:20%;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.textsearch{
+  border-radius: 5px;
+  border:1px solid #D2CECD;
+}
